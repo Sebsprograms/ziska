@@ -10,15 +10,15 @@
 
 /* Text */
 h1 {
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 3rem;
 }
 
 /* Wrapper */
@@ -97,11 +97,15 @@ header h1 {
 .social-media {
     width: 100%;
     background-color: #111;
-    padding: 24px;
+}
+
+.social-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .social-icons {
@@ -113,4 +117,96 @@ header h1 {
 
 .social-icons:hover {
     color: #ccc;
+}
+
+/* Main */
+main {
+    background-color: #eee;
+    width: 100%;
+}
+
+.main-wrapper {
+    padding: 24px;
+    max-width: 1400px;
+    margin: 0 auto
+}
+
+.main-wrapper h2 {
+    text-align: center;
+}
+
+.main-wrapper p {
+    font-size: 24px;
+    line-height: 2.5rem;
+}
+
+#ziska {
+    display: block;
+    margin: 24px auto;
+    border-radius: 50%;
+}
+
+
+/* Gallery */
+.gallery {
+    background-color: #e18db2;
+    padding-bottom: 24px;
+}
+
+.gallery h2 {
+    text-align: center;
+    padding: 24px 0 8px 0;
+}
+
+.gallery-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    margin: 16px;
+    width: 400px;
+    height: 400px;
+    background-color: #555;
+}
+
+.visit {
+    display: block;
+    padding: 16px 64px;
+    margin: 8px auto 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    border: 0;
+    background-color: #9b295c;
+    color: white;
+    cursor: pointer;
+}
+
+.visit:hover {
+    background-color: #d66597;
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright {
+    text-align: center;
+    padding-bottom: 24px;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
 }

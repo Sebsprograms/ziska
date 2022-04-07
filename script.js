@@ -1,8 +1,15 @@
-function myFunction() {
-    let x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+// Navbar
+function toggleLinks() {
+    let element = document.getElementById("myLinks");
+    if (element.style.display === "block") {
+      element.style.display = "none";
     } else {
-      x.style.display = "block";
+      element.style.display = "block";
     }
   }
+
+
+// Footer Date
+let year = new Date();
+let footerText = document.getElementById("copyright");
+footerText.innerHTML += ' ' + year.getFullYear();
