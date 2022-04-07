@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Text */
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 100%;
+}
+
+
+/* Nav */
+nav {
+    overflow: hidden;
+    background-color: #111;
+    position: relative;
+}
+
+nav #myLinks {
+    display: none;
+}
+
+nav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+}
+
+nav a.icon {
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 32px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.active {
+    font-size: 32px;
+}
+  
+
+
+
+/* Header */
+header {
+    background-image: url("./img/banner.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #555;
+    height: 80vh;
+    width: 100%;
+}
+
+.header {
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 10, 10, 0.5);
+    color: #fff;
+}
+
+header h1 {
+    padding-bottom: 24px;
+}
+
+/* Social Media */
+
+.social-media {
+    width: 100%;
+    background-color: #111;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    color: white;
+    font-size: 64px;
+    padding: 24px;
+    cursor: pointer;
+}
+
+.social-icons:hover {
+    color: #ccc;
+}
