@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
 
 /* Base */
 * {
@@ -6,26 +7,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color:#3c2a2c;
 }
 
 /* Text */
+h1, h2, h3 {
+    font-family: 'Babylonica', 'Montserrat', sans-serif;
+}
+
 h1 {
+    font-size: 8rem;
+}
+h2 {
     font-size: 6rem;
 }
 
-h2 {
-    font-size: 4rem;
-}
-
 h3 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 /* Nav */
 nav {
     overflow: hidden;
-    background-color: #111;
-    position: relative;
+    background-color: #c8e4d3;
+    position: sticky;
+    top: 0;
 }
 
 nav #myLinks {
@@ -33,7 +39,7 @@ nav #myLinks {
 }
 
 nav a {
-    color: white;
+    color: #3c2a2c;
     padding: 16px;
     text-decoration: none;
     display: block;
@@ -41,19 +47,22 @@ nav a {
 }
 
 nav a.icon {
-    background-color: #111;
+    background-color: #c8e4d3;
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 32px;
+    font-size: 64px;
+    padding: 12px 24px;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #9aceaf;
 }
 
 .active {
-    font-size: 32px;
+    font-size: 64px;
+    font-family: "Babylonica", "Montserat", sans-serif;
+    padding: 8px 24px;
 }
   
 
@@ -78,7 +87,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
 }
 
@@ -90,7 +99,7 @@ header h1 {
 
 .social-media {
     width: 100%;
-    background-color: #111;
+    background-color: #3c2a2c;
 }
 
 .social-wrapper {
@@ -103,19 +112,23 @@ header h1 {
 }
 
 .social-icons {
-    color: white;
+    background: -webkit-linear-gradient(135deg,#ffdf00, #996515);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 64px;
     padding: 24px;
     cursor: pointer;
 }
 
 .social-icons:hover {
-    color: #ccc;
+    background: -webkit-linear-gradient(#f2d392, #f2d392);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Main */
 main {
-    background-color: #eee;
+    background-color: #c8e4d3;
     width: 100%;
 }
 
@@ -135,15 +148,18 @@ main {
 }
 
 #ziska {
+    max-width: 600px;
     display: block;
-    margin: 24px auto;
+    margin: 32px auto;
     border-radius: 50%;
+    border:8px #3c2a2c solid;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
 /* Gallery */
 .gallery {
-    background-color: #e18db2;
+    background-color: #c8e4d3;
     padding-bottom: 24px;
 }
 
@@ -165,29 +181,35 @@ main {
     margin: 16px;
     width: 400px;
     height: 400px;
+    border-radius: 28px;
     background-color: #555;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .visit {
     display: block;
-    padding: 16px 64px;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    width: 280px;
     margin: 8px auto 0 auto;
     font-size: 24px;
     font-weight: bold;
     border: 0;
-    background-color: #9b295c;
-    color: white;
+    background-color: #f5c5a3;
     cursor: pointer;
+    border-radius: 28px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .visit:hover {
-    background-color: #d66597;
+    background-color: #f0a875;
 }
 
 
 /* Footer */
 footer {
-    background-color: #111;
+    background-color: #3c2a2c;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -221,7 +243,9 @@ main h1 {
 }
 
 hr {
-    padding-bottom: 8px;
+    height: 1px;
+    margin-bottom: 8px;
     margin: 0 auto;
+    border: 0.5px solid #3c2a2c;
     max-width: 1400px;
 }
